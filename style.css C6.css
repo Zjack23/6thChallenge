@@ -1,0 +1,109 @@
+body {
+    font-family: 'Roboto', sans-serif; 
+    background-color: #fff0f5; 
+    color: #333; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: #ff69b4; 
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+header input {
+    padding: 10px;
+    border: 1px solid #ff85c0;
+    border-radius: 20px;
+    outline: none;
+}
+
+header button {
+    padding: 10px 20px;
+    background-color: #ff69b4; 
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+header button:hover {
+    background-color: #ff85c0; 
+}
+
+main {
+    padding: 100px 20px 20px; 
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+#currentWeather, #forecast {
+    margin-bottom: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+#forecast {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.forecast-day {
+    border: 1px solid #d8bfd8; 
+    border-radius: 10px;
+    padding: 10px;
+    background-color: white;
+    text-align: center;
+    margin: 5px;
+    flex: 1 1 150px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+aside {
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    height: fit-content;
+}
+
+#searchHistory {
+    list-style-type: none;
+    padding: 0;
+}
+
+#searchHistory li {
+    cursor: pointer;
+    padding: 10px;
+    border-bottom: 1px solid #d8bfd8; 
+    transition: background-color 0.3s ease;
+}
+
+#searchHistory li:hover {
+    background-color: #ffe4e1; 
+}
